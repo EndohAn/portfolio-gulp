@@ -1,0 +1,177 @@
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px
+
+.myMail
+    color: #fff
+    font-size: 26px
+    padding: 30px
+    text-decoration: none
+    &:hover
+        color: #fff
+        transform: scale(1.1)
+        font-weight: 700
+        transition: 0.3s ease-out
+
+        
+
+.navigation
+    display: none
+    // position: fixed
+    top: 40px
+    right: 20px
+    height: 20px
+    width: 114px
+    z-index: 100
+    // .active
+    //     .link
+    //         visibility: visible
+    //         opacity: 1
+    //         transform: translateX(0px)
+.navigation.active .link 
+    
+    visibility: visible
+    opacity: 1
+    transform: translateX(0px)
+
+.burger
+    &__menu
+
+        position: relative
+        top: 0
+        left: 0
+        width: 100%
+        height: 45px
+        background-color: #fff
+        cursor: pointer
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        color: #141e3b
+        padding: 5px 20px
+        &::before
+            content: "Menu"
+            margin-right: 12px
+            font-size: 20px
+            color: #141e3b
+        span
+            position: relative
+            height: 50px
+            width: 20px
+            &::before
+                content: ""
+                position: absolute
+                top: 20px
+                left: 0
+                width: 100%
+                height: 2px
+                background: #141e3b
+                transition: 0.5s
+            &::after
+                content: ""
+                position: absolute
+                bottom: 20px
+                left: 0
+                width: 100%
+                height: 2px
+                background: #141e3b
+                transition: 0.5s
+.burger__menu.active::before 
+        content: "Close"
+        color: #141e3b
+        font-size: 20px
+.burger__menu.active span::before 
+    transform: rotate(225deg)
+    top: 24px
+
+
+.burger__menu.active span::after 
+    transform: rotate(135deg)
+    bottom: 24px
+
+
+    
+                    
+        // .active
+        //     &::before
+        //         content: "Close"
+        //         color: #141e3b
+        //         font-size: 20px
+        //     span
+        //         &::before
+        //             transform: rotate(225deg)
+        //             top: 24px  
+        //         &::after
+        //             transform: rotate(135deg)
+        //             bottom: 24px      
+       
+.menu
+    position: relative
+    list-style: none
+    display: flex
+    flex-direction: column
+    &__link
+        position: relative
+        text-decoration: none
+        display: block
+        padding: 10px 20px
+        height: 50px
+        background-color: #5267de
+        transition: 0.5s
+        color: #fff
+        font-size: 20px
+        font-weight: 700
+
+
+.link
+    position: relative
+    list-style: none
+    transition: 0.5s
+    visibility: hidden
+    opacity: 0
+    transform: translateX(-250px)
+    &:hover
+        background-color: azure
+        color: #141e3b
+        transition: 0s
+   
+.nav
+    &_link
+        a
+            text-decoration: none
+            position: relative
+            display: inline-block
+            overflow: hidden
+            padding: 0.5rem 0
+            font-size: 26px
+            color: #fff
+            &::before
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 0
+                height: 2px
+                width: 100%
+                background-color: #fff
+                transform: translateX(-105%)
+                transition: transform 0.3s ease-in-out
+            &:hover
+                &::before
+                    transform: translateX(0)
+
+                
+    margin: 30px
+    &_link
+        display: flex
+        align-items: center
+        justify-content: center
+        list-style: none
+   
+#particles-js
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: -1
+

@@ -1,0 +1,98 @@
+#projects
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    
+.projects
+    &__title
+        color: #141e3b
+        text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2)
+        font-size: 40px
+        margin: 80px 0px
+    &__underline
+        margin-top: 30px
+        border: 2px solid #141e55
+        width: 100%
+        text-align: center
+
+	
+.cards
+    &__wrapper
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+        background-color: #141e3b
+.card
+    position: relative
+    overflow: hidden
+    margin: 25px
+    width: 450px
+    height: 280px
+    box-shadow: inset 0 0 30px #30629f, 0 0 30px #fff,-7px 0 30px rgb(124, 96, 246), 7px 0 30px rgb(56, 61, 158)
+    &__title
+        
+        margin-left: 10px
+        font-size: 18px
+        color: #fff 
+        
+        
+    &__btn
+        font-size: 20px
+        border: 2px solid #fff
+        padding: 18px
+        a
+            text-decoration: none
+            color: #fff
+
+    &:hover
+        .additional
+            width: 100%
+            border-radius: 0 5px 5px 0
+.additional            
+    position: absolute
+    width: 150px
+    height: 100%
+    background: linear-gradient(to right, #85a3f9, #232f73)
+    transition: width 0.4s
+    overflow: hidden
+    z-index: 2	
+       
+.user-card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center	
+    width: 150px
+    height: 100%
+    position: relative
+    float: left	
+    
+
+.tool
+    margin-left: 10px
+    font-size: 18px
+    color: #fff
+
+.more-info
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 300px
+    float: left
+    position: absolute
+    left: 150px
+    height: 100%
+.general
+    width: 300px
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1
+    img
+        width: 100%
+        height: 100%
+
+
