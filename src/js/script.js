@@ -60,6 +60,7 @@ $(window).load(function () {
     });
     return false;
     });
+    
     // для крестика
     $('.modal__close').on('click', function() {
       $('.overlay,#thanks').fadeOut('slow');
