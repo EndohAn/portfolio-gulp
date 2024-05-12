@@ -90,3 +90,15 @@ gulp.task(
 		"images"
 	)
 );
+gulp.task(
+	'build',
+	gulp.series(
+		"styles",
+		"scripts",
+		"fonts",
+		"mailer",
+		"icons",
+		"html",
+		"images"
+	)
+);
